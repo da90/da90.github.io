@@ -1,124 +1,444 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
-        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <title>Budgety</title>
-    </head>
-    <body>
-        
-        <div class="top">
-            <div class="budget">
-                <div class="budget__title">
-                    Available Budget in <span class="budget__title--month">%Month%</span>:
-                </div>
-                
-                <div class="budget__value">+ 2,345.64</div>
-                
-                <div class="budget__income clearfix">
-                    <div class="budget__income--text">Income</div>
-                    <div class="right">
-                        <div class="budget__income--value">+ 4,300.00</div>
-                        <div class="budget__income--percentage">&nbsp;</div>
-                    </div>
-                </div>
-                
-                <div class="budget__expenses clearfix">
-                    <div class="budget__expenses--text">Expenses</div>
-                    <div class="right clearfix">
-                        <div class="budget__expenses--value">- 1,954.36</div>
-                        <div class="budget__expenses--percentage">45%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <div class="bottom">
-            <div class="add">
-                <div class="add__container">
-                    <select class="add__type">
-                        <option value="inc" selected>+</option>
-                        <option value="exp">-</option>
-                    </select>
-                    <input type="text" class="add__description" placeholder="Add description">
-                    <input type="number" class="add__value" placeholder="Value">
-                    <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
-                </div>
-            </div>
-            
-            <div class="container clearfix">
-                <div class="income">
-                    <h2 class="icome__title">Income</h2>
-                    
-                    <div class="income__list">
-                       
-                        <!--
-                        <div class="item clearfix" id="income-0">
-                            <div class="item__description">Salary</div>
-                            <div class="right clearfix">
-                                <div class="item__value">+ 2,100.00</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="item clearfix" id="income-1">
-                            <div class="item__description">Sold car</div>
-                            <div class="right clearfix">
-                                <div class="item__value">+ 1,500.00</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        
-                    </div>
-                </div>
-                
-                
-                
-                <div class="expenses">
-                    <h2 class="expenses__title">Expenses</h2>
-                    
-                    <div class="expenses__list">
-                       
-                        <!--
-                        <div class="item clearfix" id="expense-0">
-                            <div class="item__description">Apartment rent</div>
-                            <div class="right clearfix">
-                                <div class="item__value">- 900.00</div>
-                                <div class="item__percentage">21%</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="item clearfix" id="expense-1">
-                            <div class="item__description">Grocery shopping</div>
-                            <div class="right clearfix">
-                                <div class="item__value">- 435.28</div>
-                                <div class="item__percentage">10%</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/responsive.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Awesomefood</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="res/img/logo-white.png" alt="Logo" class="logo" />
+                <img src="res/img/logo.png" alt="Logo" class="logo-b" />
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#services">Our services</a></li>
+                    <li><a href="#signup">Sign up</a></li>
+                </ul>
+                <a class="navmobileicon jq--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>
+                Goodbye GMO and Fastfood. <br /> Hello quality, super-tasty natural meals!
+                <br />
+                <a href="#" class="hero-text-link btn btn-full jq--scroll--plan">I'm hungry</a>
+                <a href="#" class="hero-text-link btn btn-ghost jq--scroll--start">Tell me more</a>
+            </h1>
+        </div>
+    </header>
+
+    <section class="section-features jq--section-features" id="features">
+        <div class="row">
+            <h2>
+                Get food fast &mdash; not fast food.
+            </h2>
+            <p class="long-copy">
+                Hello, we’re Awesomefood, your new premium food delivery service. We know you’re always busy; No time for cooking. So, let us fix that! We're really good at what we do, this is our promise to you!
+            </p>
+
+            <div class="row js--wpt01">
+                <div class="col span-1-of-4 cols">
+                    <i class="ion-clock bigicon"></i>
+                    <h3>Up to 365 days/year</h3>
+                    <p>
+                        Up to 365 days/year
+                        No need to cook anymore! Our flexible subscription plans include up to 365 days/year coverage. No more spending valuable time in the kitchen!
+                    </p>
+                </div>
+                <div class="col span-1-of-4 cols">
+                    <i class="ion-pizza bigicon"></i>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>
+                        Twenty minutes is all it takes for your delicious food to arrive right to your home. We pride ourselves with working with the best chefs in every town to ensure you're 100% happy.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 cols">
+                    <i class="ion-checkmark bigicon"></i>
+                    <h3>100% organic</h3>
+                    <p>
+                        No GMO! All of our used produce are natural, local and most importantly, fresh. Good for you, the environment, and it also tastes better!
+                    </p>
+                </div>
+                <div class="col span-1-of-4 cols">
+                    <i class="ion-bag bigicon"></i>
+                    <h3>Order anything</h3>
+                    <p>
+                        There's always something for everyone! From our huge range of delicious meals, there's always something you can pick from and not get bored with.          
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos">
+        <ul class="tastyfood clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="C:\Users\Dmitrij\Desktop\simplesites\Website01\res\img\1.jpg" alt="Korean bibimbap with egg and vegetables" />
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="C:\Users\Dmitrij\Desktop\simplesites\Website01\res\img\2.jpg" alt="Simple italian pizza with cherry tomatoes" />
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="C:\Users\Dmitrij\Desktop\simplesites\Website01\res\img\3.jpg" alt="Chicken breast steak with vegetables" />
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="C:\Users\Dmitrij\Desktop\simplesites\Website01\res\img\4.jpg" alt="Autumn pumpkin soups" />
+                </figure>
+            </li>
+        </ul>
+
+        <ul class="tastyfood clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="C:\Users\Dmitrij\Desktop\simplesites\Website01\res\img\5.jpg" alt="Paleo beef steak with vegetables" />
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="C:\Users\Dmitrij\Desktop\simplesites\Website01\res\img\6.jpg" alt="Healthy baguette with egg and vegetables" />
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="C:\Users\Dmitrij\Desktop\simplesites\Website01\res\img\7.jpg" alt="Burger with cheddar and bacon" />
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="C:\Users\Dmitrij\Desktop\simplesites\Website01\res\img\8.jpg" alt="Granola with cherries and strawberriess" />
+                </figure>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="section-steps" id="works">
+        <div class="row">
+            <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 steps-box js--wpt02">
+                <img src="res/img/app-iPhone.png" alt="Mobile food app" class="app-screen" />
+            </div>
+            <div class="col span-1-of-2 steps-box">
+                <div class="steps">
+                    <div>1</div>
+                    <p>1.	Choose your subscription plan.</p>
+                </div>
+                <div class="steps">
+                    <div>2</div>
+                    <p>2.	Choose your meal.</p>
+                </div>
+                <div class="steps">
+                    <div>3</div>
+                    <p>3.	Place your order. We have an awesome app for this as well!</p>
+                </div>
+                <a href="#" class="app-button"><img src="res/img/download-app.svg" alt="Apple App Store Button" /></a>
+                <a href="#" class="app-button"><img src="res/img/download-app-android.png" alt="Google Play Store BUtton" /></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cities" id="services">
+        <div class="row">
+            <h2>We're currently in these cities</h2>
+            <div class="row js--wpt03">
+                <div class="col span-1-of-4 cols">
+                    <img src="res/img/lisbon-3.jpg" alr="Lisbon" />
+                    <h4>Lisbon</h4>
+                    <div class="city-features">
+                        <i class="ion-happy-outline icon-small"></i>
+                        1750+ awesome eaters
+                    </div>
+                    <div class="city-features">
+                        <i class="ion-star icon-small"></i>
+                        99+ awesome chefs
+                    </div>
+                    <div class="city-features">
+                        <i class="ion-social-twitter-outline icon-small"></i>
+                        <a href="#">@awesomef_lx</a>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-4 cols">
+                    <img src="res/img/san-francisco.jpg" alr="San Franscisco" />
+                    <h4>San Francisco</h4>
+                    <div class="city-features">
+                        <i class="ion-happy-outline icon-small"></i>
+                        3965+ awesome eaters
+                    </div>
+                    <div class="city-features">
+                        <i class="ion-star icon-small"></i>
+                        220+ awesome chefs
+                    </div>
+                    <div class="city-features">
+                        <i class="ion-social-twitter-outline icon-small"></i>
+                        <a href="#">@awesomef_sf</a>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-4 cols">
+                    <img src="res/img/berlin.jpg" alr="San Franscisco" />
+                    <h4>Berlin</h4>
+                    <div class="city-features">
+                        <i class="ion-happy-outline icon-small icon-small"></i>
+                        3550+ awesome eaters
+                    </div>
+                    <div class="city-features">
+                        <i class="ion-star icon-small"></i>
+                        260+ awesome chefs
+                    </div>
+                    <div class="city-features">
+                        <i class="ion-social-twitter-outline icon-small"></i>
+                        <a href="#">@awesomef_berlin</a>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-4 cols">
+                    <img src="res/img/london.jpg" alr="San Franscisco" />
+                    <h4>London</h4>
+                    <div class="city-features">
+                        <i class="ion-happy-outline icon-small"></i>
+                        2560+ awesome eaters
+                    </div>
+                    <div class="city-features">
+                        <i class="ion-star icon-small"></i>
+                        70+ awesome chefs
+                    </div>
+                    <div class="city-features">
+                        <i class="ion-social-twitter-outline icon-small"></i>
+                        <a href="#">@awesomef_london</a>
                     </div>
                 </div>
             </div>
-            
-            
         </div>
-        
-        <script src="app.js"></script>
-    </body>
+    </section>
+
+    <section class="section-reviews">
+        <div class="row">
+            <h2>Our customers love us!</h2>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        I'm a simple man. I want food, I order Awesomefood.
+                    </blockquote>
+                    <br />
+                    <cite><img src="res/img/customer-1.jpg" />Bob Brown</cite>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Affordable, tasty, and fresh. Delievered to my door always on time. They've never failed me, unlike my husband.
+                    </blockquote>
+                    <cite><img src="res/img/customer-2.jpg" />Joanne Greene</cite>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        I can't cook, Awesomefood does it for me! Wow!
+                    </blockquote>
+                    <br />
+                    <cite><img src="res/img/customer-3.jpg" />John White</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-plans jq--section-plans" id="signup">
+        <div class="row">
+            <h2>Start eating healthy today</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="plans js--wpt04">
+                    <div>
+                        <h3>Platinum</h3>
+                        <p class="plan-price">£399 <span>/ month</span></p>
+                        <p class="plan-price-meal">That’s £13.30 per meal</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-checkmark icon-small"></i>2 meals every day</li>
+                            <li><i class="ion-checkmark icon-small"></i>24/7 service</li>
+                            <li><i class="ion-checkmark icon-small"></i>Huge variety</li>
+                            <li><i class="ion-checkmark icon-small"></i>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-full">Sign up now!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-3">
+                <div class="plans">
+                    <div>
+                        <h3>Gold</h3>
+                        <p class="plan-price">£149 <span>/ month</span></p>
+                        <p class="plan-price-meal">That’s £14.95 per meal</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-checkmark icon-small"></i>1 meal for 10 days</li>
+                            <li><i class="ion-checkmark icon-small"></i>24/7 service</li>
+                            <li><i class="ion-checkmark icon-small"></i>Huge variety</li>
+                            <li><i class="ion-checkmark icon-small"></i>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign up now!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-3">
+                <div class="plans">
+                    <div>
+                        <h3>Silver</h3>
+                        <p class="plan-price">£19 <span>/ meal</span></p>
+                        <p class="plan-price-meal">&nbsp;</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-checkmark icon-small"></i>1 meal</li>
+                            <li><i class="ion-checkmark icon-small"></i>8 am - 12 pm service</li>
+                            <li><i class="ion-checkmark icon-small"></i>Free delivery</li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign up now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <!-- TODO: Implement map.
+        <div class="map"></div>-->
+        <div class="row">
+            <h2>We're happy to hear from you!</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Your name:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Please enter your full name." required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Your E-mail:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Please enter your E-mail address." required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="findus" id="findus">
+                            <option value="tv">TV</option>
+                            <option value="news">Newspaper</option>
+                            <option value="radio">Radio</option>
+                            <option value="internet" selected>Internet</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="newsletter">Subscribe to our newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="newsletter" id="newsletter" checked/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Your message:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Type your message here"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send" />
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+
+            <div class="col span-1-of-2">
+                <ul class="social">
+                    <li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
+                    <li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright&copy; 2017 by Awesomefood. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="https://maps.google.com/maps/api/js"></script>-->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/gmaps.js"></script>
+    <script src="res/js/script.js"></script>
+</body>
 </html>
