@@ -12,7 +12,9 @@
         padding: 0 2%;
     }
 
-        .main-nav { display:block;}
+    .main-nav {
+        display: block;
+    }
 }
 
 /*---------------------------------------------------*/
@@ -133,32 +135,46 @@
         margin-right: 36.3%;
     }
 
-    .main-nav { display:none;}
+    .main-nav {
+        display: none;
+    }
+
     .navmobileicon {
-        display:inline-block;
+        display: inline-block;
     }
 
     .main-nav {
-        float:left;
-        margin-top:15px;
+        float: left;
+        margin-top: 15px;
         margin-left: 25px;
     }
 
-    .main-nav li {
-        display:block;
+        .main-nav li {
+            display: block;
+        }
+
+            .main-nav li a:link, main-nav li a:visited {
+                display: block;
+                border: 0;
+                padding: 5px 0;
+            }
+
+    .docked main-nav {
+        margin-top: 10px;
     }
 
-    .main-nav li a:link, main-nav li a:visited {
-        display:block;
-        border:0;
-        padding: 5px 0;
+    .docked li a:link, .docked li a:visited {
+        padding: 10px 0;
     }
 
-    .docked main-nav {margin-top:10px;}
+    .docked .navmobileicon {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
 
-    .docked li a:link, .docked li a:visited { padding: 10px 0;}
-    .docked .navmobileicon {margin-top:10px; margin-right:10px}
-    .docked .navmobileicon i {color:#555;}
+        .docked .navmobileicon i {
+            color: #555;
+        }
 
 
     .long-copy {
@@ -185,7 +201,7 @@
     }
 
     cite {
-        margin:5px;
+        margin: 5px;
     }
 }
 
@@ -202,4 +218,55 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
+
+    h1 {
+        font-size: 160%;
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+        float: left;
+        margin-top: 20px;
+        margin-left:5px;
+    }
+
+        .logo-b {
+        margin-left:5px;
+    }
+
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+
+    .hero-text-box {
+        flex-wrap: wrap;
+        height: 40vh;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .steps div {
+    color:#e67e22;
+    border: 2px solid #e67e22;
+    display:inline-block;
+    border-radius:50%;
+    height: 36px;
+    width: 36px;
+    text-align:center;
+    padding: 10px;
+    float:left;
+    font-size:13px;
+    margin-right: 25px;
+}
+
+
 }
