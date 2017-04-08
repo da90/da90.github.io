@@ -203,6 +203,11 @@
     cite {
         margin: 5px;
     }
+
+        .formSend {
+        width: 100%;
+    }
+
 }
 
 /*---------------------------------------------------*/
@@ -228,11 +233,11 @@
         width: auto;
         float: left;
         margin-top: 20px;
-        margin-left:5px;
+        margin-left: 5px;
     }
 
-        .logo-b {
-        margin-left:5px;
+    .logo-b {
+        margin-left: 5px;
     }
 
     header {
@@ -240,12 +245,12 @@
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
-        height: 50vh;
+        height: 80vh;
     }
 
     .hero-text-box {
         flex-wrap: wrap;
-        height: 40vh;
+        height: 60vh;
         display: -webkit-flex;
         display: flex;
         -webkit-align-items: center;
@@ -255,18 +260,34 @@
     }
 
     .steps div {
-    color:#e67e22;
-    border: 2px solid #e67e22;
-    display:inline-block;
-    border-radius:50%;
-    height: 36px;
-    width: 36px;
-    text-align:center;
-    padding: 10px;
-    float:left;
-    font-size:13px;
-    margin-right: 25px;
-}
+        color: #e67e22;
+        border: 2px solid #e67e22;
+        display: inline-block;
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        padding: 10px;
+        float: left;
+        font-size: 13px;
+        margin-right: 25px;
+    }
 
+    .footer-nav {
+        margin-top: 8px;
+    }
 
+        .footer-nav a {
+            margin-left: 8px;
+        }
+
+    .social {
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+
+    .formSend {
+        width: 100%;
+    }
 }
